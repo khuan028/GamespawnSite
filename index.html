@@ -1,7 +1,55 @@
 ---
-title: Home - Gamespawn
-layout: default
+
 ---
 
-<h1>Home</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tempore modi eaque dignissimos numquam deleniti voluptate natus magni et? Illo, ad nisi aperiam eos veritatis ipsa corrupti incidunt iusto debitis at magnam vel alias placeat excepturi consequuntur exercitationem! Quis repellendus in culpa doloribus laboriosam. Quia aperiam ullam quae sequi quos.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Home - Gamespawn</title>
+</head>
+<body>
+    {% include nav.html %}
+    
+    <div id="sao">
+        <div id="slideshow">
+            <div id="masthead-image" class="overlay">
+                <div id="masthead-text">
+                    <h2>WELCOME TO</h2>
+                    <h1>GAMESPAWN</h1>
+                    <hr>
+                    <p>We are a game development club.
+                        We meet with industry veterans, host workshops, and teach everything from game engines to 3D modeling programs.
+                    </p>
+                    <button id="masthead-sign-up-button" style="cursor:pointer" class="button-round" onclick="location.href='#' ">Sign Up</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/home/1.jpg">
+            </div>
+            <div class="slide">
+                <img src="assets/img/home/2.jpg">
+            </div>
+            <div class="slide">
+                <img src="assets/img/home/hacknight.jpg">
+            </div>
+            <div class="slide">
+                <img src="assets/img/home/maya2015.jpg">
+            </div>
+            <div class="slide">
+                <img src="assets/img/home/obsidian.jpg">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/slideshow.js"></script>
+<script src="assets/js/index.js"></script>
+</html>

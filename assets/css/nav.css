@@ -1,13 +1,14 @@
 nav {
-    position: fixed;
-    display: inline-block;
+    position: relative;
+    display: block;
     width: 100%;
-    height: 55px;
+    height: 60px;
     margin: 0;
     padding: 0;
     left: 0;
     top: 0;
-    background-color: #1f1f1f
+    background-color: #1f1f1f;
+    z-index: 10;
 }
 
 #navbar-content {
@@ -57,15 +58,30 @@ nav {
 .navbar-menu a {
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 100%;
     text-decoration: none;
-    color: white;
+    color: rgb(221, 221, 221);
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 .navbar-menu a:hover {
-    background-color: #0073a8
+    background-color: #424242;
+    color: white;
+}
+
+#join-now-button {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #008fa8;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+#join-now-button:hover {
+    background-color: #00b0cf;
 }
 
 .handle {
@@ -75,6 +91,7 @@ nav {
     right: 0;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0;
     height: 100%;
     cursor: pointer;
     color: white;
@@ -87,7 +104,8 @@ nav {
     width: 1000px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+
     #navbar-logo {
         display: inline-block;
     }
@@ -108,12 +126,23 @@ nav {
     /* If the number of buttons in the navbar-menu changes, change the max-height 
     of the mobile menu here. */
     .showing {
-        max-height: 200px;
+        max-height: 300px;
     }
 
     .navbar-menu li {
         display: block;
         height: 45px;
+        margin-left: 12px;
+    }
+
+    #join-now-button {
+        width: 70%;
+        position: relative;
+        left: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+        transform: translateX(-50%);
     }
 }
 

@@ -4,9 +4,27 @@
 
 
 body {
-    font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: "Oswald", Helvetica, sans-serif;
+    margin: 0;
 }
 
+div {
+    margin: 12px;
+}
+
+.button-round {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    font-family: inherit;
+}
 
 {% include_relative nav.css %}
 
