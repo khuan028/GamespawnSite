@@ -6,10 +6,35 @@
 body {
     font-family: "Oswald", Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 div {
     margin: 12px;
+}
+
+#page-title {
+    font-size: 3em;
+    color: #444444;
+    line-height: 1em;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+#page-subtitle {
+    color: #797979;
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 0;
+}
+
+.width-constrain-centered {
+    width: 1000px;
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .button-round {
@@ -24,6 +49,12 @@ div {
     margin: 4px 2px;
     border-radius: 6px;
     font-family: inherit;
+}
+
+@media only screen and (max-width: 1000px) {
+    .width-constrain-centered {
+        width: 100vw;
+    }
 }
 
 {% include_relative nav.css %}
