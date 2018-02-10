@@ -1,3 +1,14 @@
 markdown: redcarpet
 baseurl: /GamespawnSite
 exclude: ['README.md']
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project-page

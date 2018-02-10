@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/common.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>{{page.title}} - Gamespawn</title>
 </head>
 <body>
     {% include nav.html %}
-    <div id="title-container" class="width-constrain-centered">
+    <div class="width-constrain-centered">
         <h1 id="page-title">{{page.title}}</h1>
         <p id="page-subtitle">{{page.subtitle}}</p>
+
+        {{content}}
     </div>
     
     
-    {{content}}
+    
 </body>
-<script src="assets/js/common.js"></script>
+<script src="{{site.baseurl}}/assets/js/common.js"></script>
 </html>

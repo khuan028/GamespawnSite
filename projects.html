@@ -4,3 +4,9 @@ subtitle: See what we're working on
 layout: default
 ---
 
+{% assign projects = site.projects | sort: "date-added" | reverse %}
+{% for project in projects %}
+    <h2><a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a></h2>
+    <p>{{project.email}}</p>
+    <p><i>{{project.tags | join: ", "}}</i></p>
+{% endfor %}

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/common.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/project-page.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>{{page.title}} - Gamespawn</title>
+</head>
+<body>
+    {% include nav.html %}
+    <div class="width-constrain-centered">
+        <a href="{{site.baseurl}}/projects.html"> &lt; Back to Projects</a>
+        <h1 id="page-title">{{page.title}}</h1>
+        <p id="page-subtitle">{{page.subtitle}}</p>
+
+        <p style="font-size: 1.2em;">
+            {{ page.team | join: ", " }}
+        </p>
+
+        <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail" style="float: left; margin-right: 40px">
+        <p class="project-page-simpletext">
+            {% assign description = page.short-description %}
+            {% if page.long-description and page.long-description != "" %}
+                {% assign description = page.long-description %}
+            {% endif %}
+            {{description}}
+        </p>
+        
+        {{content}}
+    </div>
+    
+</body>
+<script src="{{site.baseurl}}/assets/js/common.js"></script>
+</html>
