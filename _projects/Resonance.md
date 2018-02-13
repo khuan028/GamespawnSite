@@ -9,5 +9,5 @@ recruiting: [ ]
 tags: ["2D", "completed"]
 date-added: 2015
 
-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWRmpTZTg3RWpuaFk/view?usp=sharing"
+download-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWRmpTZTg3RWpuaFk/view?usp=sharing"
 ---

@@ -1,10 +1,38 @@
 #project-page-thumbnail {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 570px;
+    float: left; 
+    margin-right: 40px;
     object-fit: contain;
     background: #e7e7e7;
 }
 
-.project-page-simpletext {
-    font-family: Arial, Helvetica, sans-serif;
+.recruitment-banner {
+    font-family: "Roboto", Helvetica, sans-serif;
+    background: #00c3e6;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.recruitment-banner a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.download-link-container {
+    background: #e7e7e7;
+    display: flex;
+    padding: 12px;
+}
+
+.download-link-container p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+#download-button {
+    display: inline-block;
+    background: #c03783;
 }

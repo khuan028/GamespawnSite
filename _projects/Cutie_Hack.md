@@ -9,5 +9,6 @@ recruiting: [ ]
 tags: ["2D", "isometric", "puzzle", "completed"]
 date-added: 2016
 
-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWTlNsaWlUb0dMYXM/view?usp=sharing"
+
+download-link: "https://drive.google.com/a/ucr.edu/file/d/0B_dRwa4KtnbWTlNsaWlUb0dMYXM/view?usp=sharing"
 ---

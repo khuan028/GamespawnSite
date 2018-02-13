@@ -68,7 +68,7 @@ nav {
     top: 50%;
     transform: translate(0%, -50%);
     color: white;
-    width: 40%;
+    width: 30%;
     margin: 0;
     text-align: left;
 }
@@ -85,8 +85,8 @@ nav {
 }
 
 #masthead-text p {
-    font-size: 1.7em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 
 #masthead-sign-up-button {

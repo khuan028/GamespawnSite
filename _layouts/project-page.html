@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400" rel="stylesheet">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/common.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/project-page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,14 +17,27 @@
     <div class="width-constrain-centered">
         <a href="{{site.baseurl}}/projects.html"> &lt; Back to Projects</a>
         <h1 id="page-title">{{page.title}}</h1>
-        <p id="page-subtitle">{{page.subtitle}}</p>
-
-        <p style="font-size: 1.2em;">
-            {{ page.team | join: ", " }}
-        </p>
-
-        <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail" style="float: left; margin-right: 40px">
-        <p class="project-page-simpletext">
+        <p id="page-subtitle">{{ page.team | join: ", " }}</p>
+        <br>
+        {% if page.tags contains "recruiting" %}
+            <div class="recruitment-banner">{{page.title}} is currently recruiting 
+                {% if page.recruiting and page.recruiting != "" %}
+                    {{page.recruiting | join: ", "}} and more!
+                {% else %}
+                    new members! 
+                {% endif %}
+                <a href="mailto:{{page.email}}">Apply now!</a></div>
+            <br>
+        {% endif %}
+        <img src="{{site.baseurl}}/{{page.thumbnail}}" id="project-page-thumbnail">
+        {% if page.download-link and page.download-link != "" %}
+        <div class="download-link-container">
+            <button id="download-button" style="cursor:pointer" class="button-round" onclick="location.href='{{page.download-link}}' ">Download</button>
+            <p>{{page.title}} Download</p>
+        </div>
+        {% endif %}
+        
+        <p>
             {% assign description = page.short-description %}
             {% if page.long-description and page.long-description != "" %}
                 {% assign description = page.long-description %}
